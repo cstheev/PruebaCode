@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toledo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+  	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+	<link rel="icon" type="img/png" href="assets/img/destokp/logo.png">
+
+	
+</head>
+<body>
+
+	<section class="header animate__animated animate__fadeInDown">
+		<img src="assets/img/destokp/Titulo.png">
+		<img src="assets/img/destokp/familia.png">
+	</section>
+
+	<section class="game animate__animated animate__zoomIn">
+		<h3>Descubre la receta</h3>
+		<section class="game-game">
+			<section class="borde">
+			<img src="assets/img/destokp/secreto.jpg" class="secreto">
+			<section class="part">
+				<section>
+					<h5>Mueve los productos Toledo, hacia la silueta que corresponde, participa y gana un KIT NAVIDEÑO TOLEDO</h5>
+				</section>
+				<section>
+					<img src="assets/img/destokp/familia.png">
+				</section>
+			</section>
+			<section class="options">
+				<div id="draggable_gallina" class="ui-widget-content">
+					<img src="assets/img/destokp/gallina-rellena-2.png" class="gallina">
+				</div>
+				<div id="draggable_jamon" class="ui-widget-content">
+					<img src="assets/img/destokp/jamon-tipo-canadiense.png" class="jamon">
+				</div>
+				<div id="draggable_pierna" class="ui-widget-content">
+					<img src="assets/img/destokp/Pierna-horneada-2.png" class="pierna">
+				</div>
+			</section>
+			<section class="img">
+				<img src="assets/img/destokp/gallina-rellena-2.png" class="gallinar">
+				<img src="assets/img/destokp/jamon-tipo-canadiense.png" class="jamonr">
+				<img src="assets/img/destokp/Pierna-horneada-2.png" class="piernar">
+			</section>
+			<center><button class="ver">Aceptar</button></center>
+			</section>
+		</section>
+	</section>
+
+	<section class="recipe">
+		<h3>Recetas</h3>
+
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm-3 animate__animated animate__fadeInLeft">
+		      <img src="assets/img/destokp/RB1.png" class="re">
+		      <img src="assets/img/destokp/Ver-receta.png" class="seere one">
+		      <p>Pierna horneada con ajos rostizados y tomillo</p>
+		    </div>
+		    <div class="col-sm-3 animate__animated animate__fadeInLeft">
+		      <img src="assets/img/destokp/RB2.png" class="re">
+		      <img src="assets/img/destokp/Ver-receta.png" class="seere two">
+		      <p>Pollo rostizado aromatizado con hierbas</p>
+		    </div>
+		    <div class="col-sm-3 animate__animated animate__fadeInRight">
+		      <img src="assets/img/destokp/RB3.png" class="re">
+		      <img src="assets/img/destokp/Ver-receta.png" class="seere three">
+		      <p>Pescado frito a la chorrillana</p>
+		    </div>
+		    <div class="col-sm-3 animate__animated animate__fadeInRight">
+		      <img src="assets/img/destokp/RB4.png" class="re">
+		      <img src="assets/img/destokp/Ver-receta.png" class="seere four">
+		      <p>Pollo horneado</p>
+		    </div>
+		  </div>
+		</div>
+	</section>
+
+	<section class="product animate__animated animate__backInUp">
+		<h3>Productos</h3>
+		<h4>Lista para calentar <br>y servir</h4>
+		<center>
+		<section class="product-carrusel">
+			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<div class="row">
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/Pierna-horneada-2.png">
+			    			<h2>Pierna horneada</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/gallina-rellena-2.png">
+			    			<h2>Gallina rellena</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/jamon-tipo-canadiense.png">
+			    			<h2>Jamón canadiense</h2>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="carousel-item">
+			      <div class="row">
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/gallina-rellena-2.png">
+			    			<h2>Gallina rellena</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/jamon-tipo-canadiense.png">
+			    			<h2>Jamón canadiense</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/Pierna-horneada-2.png">
+			    			<h2>Pierna horneada</h2>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="carousel-item">
+			      <div class="row">
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/jamon-tipo-canadiense.png">
+			    			<h2>Jamón canadiense</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/Pierna-horneada-2.png">
+			    			<h2>Pierna horneada</h2>
+			    		</div>
+			    		<div class="col-sm-4">
+			    			<img src="assets/img/destokp/gallina-rellena-2.png">
+			    			<h2>Gallina rellena</h2>
+			    		</div>
+			    	</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			    <span><img src="assets/img/destokp/Flecha-izq.png" class="izq"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			    <span><img src="assets/img/destokp/Flecha-der.png" class="der"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</section>
+		</center>
+	</section>
+
+
+	<center>
+	<section class="info">
+		<section class="phone animate__animated animate__backInLeft">
+			<img src="assets/img/destokp/Telefono.png">
+			<h5>Te lo llevamos a casa <br>
+				<small>3760-3030</small></h5>
+		</section>
+		<section class="hour animate__animated animate__backInRight">
+			<h5>7:00 am - 4:00 pm <br>
+				<small>Horario de entrega</small></h5>
+		</section>
+	</section>
+	</center>
+
+
+	<center>
+	<section class="footer">
+		<section class="reco animate__animated animate__backInLeft">
+			<h5>Reconocimientos</h5>
+			<img src="assets/img/destokp/copa.png" class="copa">
+			<img src="assets/img/destokp/lovemarks.png" class="love">
+		</section>
+		<section class="social animate__animated animate__backInRight">
+			<img src="assets/img/destokp/logo.png" class="logo"><br>
+			<img src="assets/img/destokp/Facebook-icono.png" class="icono">
+			<img src="assets/img/destokp/Instagram-icono.png" class="icono">
+			<img src="assets/img/destokp/Youtube-icono.png" class="icono">
+			<img src="assets/img/destokp/Whats-icono.png" class="icono">
+		</section>
+	</section>
+	</center>
+
+
+
+
+
+
+
+	<!-- sección de recetas -->
+
+	<section class="recetauno animate__animated animate__zoomIn">
+		<img src="assets/img/destokp/cerrar-icono.png" class="close one">
+		<section class="imgFood">
+			<h2>Pierna Horneada con <br> ajos rostizados y tomillo</h2>
+			<center><img src="assets/img/destokp/receta-1-desktop.png"></center>
+		</section>
+		<section class="inst">
+			<section class="ingredientes">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/ingredientes-icono-desktop.png">
+					<h3>Ingredientes</h3>
+				</section>
+				</center>
+				<section class="parte">
+					<section>
+					<ul>
+						<li>1 Pierna Horneada Toledo Deli (8 libras aproximadamente)</li>
+						<li>3 cucharadas de mostaza</li>
+						<li>2 cabezas de ajo</li>
+						<li>1/2 taza de vino blanco</li>
+						<li>1/2 taza de tomillo fresco</li>
+						<li>1 cebolla en cubos</li>
+						<li>1 taza de tomates grape</li>
+					</ul>
+					</section>
+					<section>
+						<ul>
+							<li>3 onzas de mantequilla a temperatura ambiente</li>
+							<li>3 cucharadas de salsa soya</li>
+							<li>2 cucharadas de aceite en oliva</li>
+							<li>3 cucharadas de vinagre de manzana</li>
+							<li>Sal y pimienta</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="preparacion">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/preparacion-icono-desktop.png">
+					<h3>Preparación</h3>
+				</section>
+				</center>
+				<section>
+					<ul>
+						<li>Precaliente el horno a 350°F</li>
+						<li>Para rostizar los ajos, caliente un sartén y coloque los dientes de ajo con la salsa soya y el aceite de oliva. Baje la temperatura, tape y deje cocinar por 10 minutos. Reserve </li>
+						<li>Aparte, con ayuda de una brocha, esparza la mantequilla y la mostaza sobre la Pierna Horneada Toledo Deli.
+						</li>
+						<li>Haga cortes sobre la pierna con cuchillo pequeño y coloque en esos espacios, los tomates y la cebolla.</li>
+						<li>Acomode la pierna en un molde para horno y agregue el vino blanco, el vinagre de manzana y el tomillo fresco.</li>
+						<li>Sazone con sal y pimienta al gusto, deje reposar la pierna en el regrigerador por un mínimo de 2 horas.</li>
+						<li>Hornee por 45 minutos hasta que tome la coloración deseada y sirva.</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+
+
+	<section class="recetados animate__animated animate__zoomIn">
+		<img src="assets/img/destokp/cerrar-icono.png" class="close two">
+		<section class="imgFood">
+			<h2>Pollo rostizado <br> aromatizado con hierbas</h2>
+			<center><img src="assets/img/destokp/receta-3-desktop.png"></center>
+		</section>
+		<section class="inst">
+			<section class="ingredientes">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/ingredientes-icono-desktop.png">
+					<h3>Ingredientes</h3>
+				</section>
+				</center>
+				<section class="parte">
+					<section>
+					<ul>
+						<li>1/2 kilo de hongos</li>
+						<li>1 cebolleta</li>
+						<li>1/2 vaso de vinagre</li>
+						<li>Tomillo</li>
+						<li>Cebollino</li>
+						<li>Agua</li>
+						<li>Sal</li>
+					</ul>
+					</section>
+					<section>
+						<ul>
+							<li>1 pollo de 1 kilo y medio</li>
+							<li>8 lonchas de panceta</li>
+							<li>3 dientes de ajo</li>
+							<li>1 vaso de agua</li>
+							<li>Romero</li>
+							<li>Harina de maíz refinada</li>
+							<li>Aceite virgen extra</li>
+							<li>Perejil picado</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="preparacion">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/preparacion-icono-desktop.png">
+					<h3>Preparación</h3>
+				</section>
+				</center>
+				<section>
+					<ul>
+						<li>Limpia el pollo. Sazónalo y condimenta por dentro y por fuera con media cebolleta, el ajo, el tomillo, el romero, y el cebollino. Introdúcelo en el horno a 200º C.</li>
+						<li>Cuela la salsa del asado del pollo en un cazo y lígala con un poco de harina de maíz y agua.</li>
+						<li>Corta las lonchas de panceta y colócalas en una sartén a fuego suave.</li>
+						<li>Limpia los hongos, filetéalos e incorpóralos a la panceta. Guísalos a fuego suave. Espolvorea con perejil. Sirve el pollo con los hongos y la salsa.</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+
+
+
+	<section class="recetatres animate__animated animate__zoomIn">
+		<img src="assets/img/destokp/cerrar-icono.png" class="close three">
+		<section class="imgFood">
+			<h2>Pescado frito a la<br> chorrillana</h2>
+			<center><img src="assets/img/destokp/receta-4-desktop.png"></center>
+		</section>
+		<section class="inst">
+			<section class="ingredientes">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/ingredientes-icono-desktop.png">
+					<h3>Ingredientes</h3>
+				</section>
+				</center>
+				<section class="parte">
+					<section>
+					<ul>
+						<li>6 filetes de pescado (900 gr)</li>
+						<li>Harina Favorita en cantidad necesaria</li>
+						<li>2 cebollas cortadas en cuñas (300 gr)</li>
+						<li>3 tomates (360 gr)</li>
+						<li>1 ají verde cortado en tiras (100 gr)</li>
+						<li>Jugo de limón</li>
+						<li>Sal y pimienta al gusto</li>
+					</ul>
+					</section>
+					<section>
+						<ul>
+							<li>½ taza de aceite Cocinero (110 ml)</li>
+							<li>2 dientes de ajo (4 gr)</li>
+							<li>1 cda. de ají molido (20 gr)</li>
+							<li>½ cdta. de orégano (3 gr)</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="preparacion">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/preparacion-icono-desktop.png">
+					<h3>Preparación</h3>
+				</section>
+				</center>
+				<section>
+					<ul>
+						<li>Condimentar los filetes de pescado con sal y pimienta. Pasarlos por harina y freírlos en abundante aceite caliente.</li>
+						<li>Para la salsa, coloca una olla con aceite y sofríe la cebolla con el ajo molido y los tomates. Añade el ají amarillo, el vinagre y condimenta con sal, pimienta y orégano. Cocine unos minutos y retire del fuego.</li>
+						<li>Sirva el pescado y bañe con la salsa y acompañe con arroz y ensalada.</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+
+
+
+	<section class="recetacuatro animate__animated animate__zoomIn">
+		<img src="assets/img/destokp/cerrar-icono.png" class="close four">
+		<section class="imgFood">
+			<h2>Pollo horneado</h2>
+			<center><img src="assets/img/destokp/receta-5-desktop.png"></center>
+		</section>
+		<section class="inst">
+			<section class="ingredientes">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/ingredientes-icono-desktop.png">
+					<h3>Ingredientes</h3>
+				</section>
+				</center>
+				<section class="parte">
+					<section>
+					<ul>
+						<li>1 pollo entero</li>
+						<li>1/2 taza de sal</li>
+						<li>1 cucharadita de pimienta</li>
+						<li>1/2 taza de azúcar</li>
+						<li>1 limón</li>
+						<li>2 cucharadas de miel</li>
+						<li>1 cucharada de mostaza</li>
+					</ul>
+					</section>
+					<section>
+						<ul>
+							<li>2 cucharadas de salsa de soya</li>
+							<li>1 cucharada de aceite de oliva</li>
+							<li>1 ramita de tomillo fresco</li>
+							<li>4 dientes de ajo, enteros</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="preparacion">
+				<center>
+				<section class="text">
+					<img src="assets/img/destokp/preparacion-icono-desktop.png">
+					<h3>Preparación</h3>
+				</section>
+				</center>
+				<section>
+					<ul>
+						<li>Lava el pollo y sécalo muy bien. Retira los interiores.</li>
+						<li>En un recipiente grande disuelve 1/2 taza de sal, 1 cucharadita de pimienta, y 1/2 taza de azúcar en 2 ó 3 litros de agua. Sumerge el pollo en este líquido, tápalo, y refrigera dos horas.</li>
+						<li>Escurre el líquido y seca el pollo. Acomódalo en una fuente o un recipiente para hornear, forrado con papel aluminio, para que después te sea fácil limpiarlo.</li>
+						<li>Precalienta el horno a 375ºF.</li>
+						<li>Unta toda la piel del pollo con una mezcla de jugo de limón, miel, mostaza, salsa de soja y aceite de oliva. En la cavidad abdominal del pollo puedes poner el limón exprimido y unas ramitas de tomillo, orégano o cualquier otra hierba fresca que tengas. Esparce los ajos enteros alrededor del pollo.</li>
+						<li>Cuando el horno esté caliente, pon el pollo dentro y hornea por 1 hora, rociando cada 15 minutos con el jugo de la cocción.</li>
+						<li>Y ahora sí, córtalo y sírvelo con el jugo de la cocción.</li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section class="form animate__animated animate__zoomIn">
+		<img src="assets/img/destokp/cerrar-icono.png" class="close-form"><br><br>
+		<img src="assets/img/destokp/Titulo.png" class="logo">
+		<section class="inputbox">
+			<input type="text" placeholder="Nombre" autocomplete="off">
+		</section>
+		<section class="inputbox">
+			<input type="text" placeholder="DPI" autocomplete="off">
+		</section>
+		<section class="inputbox">
+			<input type="number" placeholder="Teléfono" autocomplete="off">
+		</section>
+		<section class="inputbox">
+			<input type="email" placeholder="Correo" autocomplete="off">
+		</section>
+		<section class="inputbox">
+			<select>
+				<option disabled="disabled" selected="true">Seleccione departamento</option>
+				<option>Guatemala</option>
+				<option>Alta Verapaz</option>
+				<option>Baja Verapaz</option>
+				<option>Escuintla</option>
+				<option>Quiché</option>
+				<option>Sololá</option>
+				<option>Chimaltenango</option>
+				<option>Santa Rosa</option>
+			</select>
+		</section>
+		<section class="inputbox">
+			<input type="number" placeholder="¿Con cuántas personas cuenta su familia?" autocomplete="off">
+		</section>
+		<center><button class="enviar">Enviar datos</button></center>
+	</section>
+
+</body>
+</html>
+
+<script type="text/javascript" src="script/script.js"></script>
+
+<script>
+  $( function() {
+    $( "[id^=draggable]" ).draggable();
+  } );
+</script>
